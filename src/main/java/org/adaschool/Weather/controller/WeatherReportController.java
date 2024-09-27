@@ -21,7 +21,7 @@ public class WeatherReportController {
 
     @GetMapping("/weather-report")
     public WeatherReport getWeatherReport(@RequestParam double latitude, @RequestParam double longitude) {
-        return weatherReportService.getWeatherReport( longitude, latitude);
+        return weatherReportService.getWeatherReport( latitude, longitude);
     }
 }
 
